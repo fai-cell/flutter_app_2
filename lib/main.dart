@@ -20,7 +20,7 @@ class _ReportPageState extends State<ReportPage> {
   }
   void submitIssue(){
     final error = validateTitle(controller.text);
-    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(error ?? 'Issue Submitted successfully!')));
+    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(error ?? 'Issue Submitted successfully')));
   }
   @override
   void dispose(){
